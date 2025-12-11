@@ -11,4 +11,10 @@ public class SupabaseConfig {
 
     // Эндпоинт для таблицы домашнего инвентаря
     public static final String TABLE_URL = SUPABASE_URL + "/rest/v1/wegistert";
+
+    // Заголовки для запросов
+    public static final String HEADER_API_KEY = "apikey";
+    public static final String HEADER_AUTHORIZATION = "Authorization";
+    public static final String HEADER_CONTENT_TYPE = "Content-Type";
+    public static final String CONTENT_TYPE_JSON = "application/json";
 }
