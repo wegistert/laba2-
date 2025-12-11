@@ -10,6 +10,6 @@
 Данный проект демонстрирует 19.	Домашний инвентарь: «название предмета» (текст), «ориентировочная стоимость» (число), «дата покупки» (дата).
 <img width="1912" height="1039" alt="image" src="https://github.com/user-attachments/assets/d3a50198-50d9-436f-b1c8-593249b0bfac" />
 
-
+видо функционала приложения
 https://github.com/user-attachments/assets/b9e511ca-822b-442f-bb9d-e84c41a3bd50
 
