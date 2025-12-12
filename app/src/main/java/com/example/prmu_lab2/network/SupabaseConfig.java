@@ -10,7 +10,7 @@ public class SupabaseConfig {
     public static final String AUTH_SIGNIN_URL = SUPABASE_URL + "/auth/v1/token?grant_type=password";
 
     // Эндпоинт для таблицы домашнего инвентаря
-    public static final String TABLE_URL = SUPABASE_URL + "/rest/v1/wegistert";
+    public static final String TABLE_URL = SUPABASE_URL + "/rest/v1/tasks";
 
     // Заголовки для запросов
     public static final String HEADER_API_KEY = "apikey";

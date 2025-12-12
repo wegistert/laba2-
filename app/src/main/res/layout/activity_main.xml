@@ -37,4 +37,13 @@
         android:padding="32dp"
         android:visibility="gone"/>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_add"
+        app:backgroundTint="?attr/colorPrimary"/>
+
 </LinearLayout>
