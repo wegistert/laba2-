@@ -6,6 +6,7 @@ import java.util.Locale;
 
 public class InventoryItem {
     private String id;
+    private String userId;  // Добавляем поле для user_id
     private String itemName;
     private double estimatedCost;
     private String purchaseDate;
@@ -23,6 +24,9 @@ public class InventoryItem {
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
 
+    public String getUserId() { return userId; }
+    public void setUserId(String userId) { this.userId = userId; }
+
     public String getItemName() { return itemName; }
     public void setItemName(String itemName) { this.itemName = itemName; }
 
@@ -31,6 +35,12 @@ public class InventoryItem {
 
     public String getPurchaseDate() { return purchaseDate; }
     public void setPurchaseDate(String purchaseDate) { this.purchaseDate = purchaseDate; }
+
+    // Метод для проверки валидности данных
+    public boolean isValid() {
+        return itemName != null && !itemName.trim().isEmpty()
+                && purchaseDate != null && !purchaseDate.trim().isEmpty();
+    }
 
     // Форматированная дата для отображения
     public String getFormattedDate() {

@@ -10,11 +10,16 @@ public class SupabaseConfig {
     public static final String AUTH_SIGNIN_URL = SUPABASE_URL + "/auth/v1/token?grant_type=password";
 
     // Эндпоинт для таблицы домашнего инвентаря
-    public static final String TABLE_URL = SUPABASE_URL + "/rest/v1/tasks";
+    public static final String TABLE_URL = SUPABASE_URL + "/rest/v1/home_inventory";
 
     // Заголовки для запросов
     public static final String HEADER_API_KEY = "apikey";
     public static final String HEADER_AUTHORIZATION = "Authorization";
     public static final String HEADER_CONTENT_TYPE = "Content-Type";
     public static final String CONTENT_TYPE_JSON = "application/json";
+
+    // Метод для получения URL с фильтром по ID
+    public static String getItemUrl(String itemId) {
+        return TABLE_URL + "?id=eq." + itemId;
+    }
 }
